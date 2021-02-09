@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conway's Game of Life</title>
 
     <script src="./utils.js"></script>
     <script src="./cell.js"></script>
     <script src="./grid.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="game">
-            <canvas id="grid" class="grid"></canvas>
+      <div class="game">
+        <canvas id="grid" class="grid"></canvas>
+      </div>
+      <div class="actions">
+        <div class="card">
+          <div class="title">
+            <h1>Game of Life</h1>
+          </div>
+          <div class="rules">
+            The rules are:
+            <ul>
+              <li>Any live cell with two or three live neighbours survives.</li>
+              <li>
+                Any dead cell with three live neighbours becomes a live cell.
+              </li>
+              <li>
+                All other live cells die in the next generation. Similarly, all
+                other dead cells stay dead.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button id="playButton" class="button play">Play</button>
+            <button id="resetButton" class="button reset">Reset</button>
+            <button id="randomButton" class="button random">Random</button>
+          </div>
         </div>
-        <div class="actions">
-            <div>
-                <button id="playButton">Play</button>
-                <button id="resetButton">Reset</button>
-                <button id="randomButton">Random</button>
-            </div>
-        </div>
+      </div>
     </div>
 
-
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
