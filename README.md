@@ -17,7 +17,7 @@ These rules, which compare the behavior of the automaton to real life, can be co
 
 ## HowToPlay
 
-Clone the repository and then open the `index.html`. The initial state you can draw any pattern on the grid, and then press the button Play to see how
+Clone the repository and then open the `index.html`. In the initial state you can draw any pattern on the grid, and then press the button Play to see how
 the rules are been applying on the grid.
 
 You can restart the grid, with the Reset Button. And if you don't want to draw a pattern, then you can use the option Random, to generate a Random pattern and play.
